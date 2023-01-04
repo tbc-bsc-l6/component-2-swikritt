@@ -13,26 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () { // get is http request // function are all in controller 
-    return view('welcome'); //view function
-   // return "hello";
-});
-
-Route::get('/test-page',function (){
-    return "Swikrit Thapa";
-});
-
-
-Route::get('/posts', function()
-{
-    return view('posts');
-});
-
-Route::get('/posts/{post}', function($slug)
-{
-    $post= file_get_contents(__DIR__ . "/../resources/posts/{$slug}.html");
-    return view('post',[
-        'post'=>$post,
-        'title'=>$slug
-    ]);
+Route::get('/', function () {
+    return view('welcome');
 });
