@@ -11,3 +11,11 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 }
+
+class MainController extends Controller
+{
+    public function index()
+    {
+        return view('welcome');
+    }
+}
