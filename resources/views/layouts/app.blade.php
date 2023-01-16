@@ -76,6 +76,7 @@
         </nav>
 
         <main class="py-4">
+          <div class="container-fluid"> 
         @if(isset($errors)&& $errors->any() )
     <div class="alert alert-danger">
          <ul>
@@ -94,6 +95,7 @@
 @endif
 
             @yield('content')
+            </div> 
         </main>
     </div>
 </body>
