@@ -8,7 +8,5 @@
 </head>
 <body> 
     @yield('content')  
-    erything up-to-date
-
 </body>
 </html>  
