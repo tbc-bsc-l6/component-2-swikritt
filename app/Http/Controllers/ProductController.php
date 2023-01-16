@@ -43,7 +43,7 @@ class ProductController extends Controller
     {
         //$product = DB::table('products')->where('id',$product)->get();
        // $product = DB::table('products')->where('id',$product)->first();
-        $product = Product::findorFail($product);
+        $product = Product::findOrFail($product);
 
 
         return view ('products.show')->with([
@@ -60,7 +60,7 @@ class ProductController extends Controller
 
     public function update($product)
     {
-        $product = Product::findorFail($product);
+        $product = Product::findOrFail($product);
 
         $product->update(request()->all());
 
@@ -69,6 +69,12 @@ class ProductController extends Controller
 
     public function destroy($product)
     {
-     //   return 'A form to create a product'; 
+    
+        $product = Product::findOrFail($product);
+        
+        $product->delete();
+
+        return $product;
+
     }
 }
