@@ -21,12 +21,12 @@ class ProductController extends Controller
 
     public function create()
     {
-        return 'A form to create a product'; 
+        return view('products.create'); 
     }
 
     public function store()
     {
-     //   return 'A form to create a product'; 
+     dd( 'In store');
     }
 
     public function show($product)
