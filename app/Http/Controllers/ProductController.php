@@ -26,7 +26,17 @@ class ProductController extends Controller
 
     public function store()
     {
-     dd( 'In store');
+    //  $product = Product::create([
+    //   'title' => request()->title,
+    //   'description' =>request()->description,
+    //   'price' => request()->price,
+    //   'stock' => request()->stock,
+    //   'status' => request()->status,
+    //  ]); 
+
+     $product =Product::create(request()->all());
+
+    return $product;
     }
 
     public function show($product)
@@ -43,13 +53,18 @@ class ProductController extends Controller
 
     public function edit($product)
     {
-        return "Showing the form to edit the product  {$product}";
-
+     return view('products.edit')->with([
+    'product' => Product::FindOrFail($product),
+    ]);
     }
 
     public function update($product)
     {
-     //   return 'A form to create a product'; 
+        $product = Product::findorFail($product);
+
+        $product->update(request()->all());
+
+        return $product;
     }
 
     public function destroy($product)
