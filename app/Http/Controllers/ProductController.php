@@ -33,8 +33,23 @@ class ProductController extends Controller
     //   'stock' => request()->stock,
     //   'status' => request()->status,
     //  ]); 
+     $rules = [
+        'title' => ['required','max:255'],
+        'description' => ['required','max:1000'],
+        'stock' => ['required','min:1'],
+        'price' => ['required','min:0'],
+        'status' => ['required','in:available,unavailable'],
+        ];
 
+        request()->validate($rules);
      $product =Product::create(request()->all());
+
+    if (request()->stock == 0 && request()-> status == 'available'){
+    session()->flash('error','If avilable must have stock');
+
+    return redirect()->back();
+    }
+ 
 
      return redirect()->route('products.index');
 
@@ -61,6 +76,16 @@ class ProductController extends Controller
 
     public function update($product)
     {
+        $rules = [
+            'title' => ['required','max:255'],
+            'description' => ['required','max:1000'],
+            'stock' => ['required','min:1'],
+            'price' => ['required','min:0'],
+            'status' => ['required','in:available,unavailable'],
+            ];
+    
+            request()->validate($rules);
+
         $product = Product::findOrFail($product);
 
         $product->update(request()->all());
