@@ -34,3 +34,7 @@ Route::get('products/{product}', 'ProductController@show')->name('products.show'
  
 
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
