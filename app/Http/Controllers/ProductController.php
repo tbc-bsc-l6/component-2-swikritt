@@ -71,12 +71,10 @@ class ProductController extends Controller
      
     }
 
-    public function show($product)
+    public function show(Product $product)
     {
         //$product = DB::table('products')->where('id',$product)->get();
        // $product = DB::table('products')->where('id',$product)->first();
-        $product = Product::findOrFail($product);
-
 
         return view ('products.show')->with([
             'product' => $product,
