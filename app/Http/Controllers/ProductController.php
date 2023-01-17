@@ -76,7 +76,7 @@ class ProductController extends Controller
         //$product = DB::table('products')->where('id',$product)->get();
        // $product = DB::table('products')->where('id',$product)->first();
 
-        return view ('products.show')->with([
+        return view (' products.show')->with([
             'product' => $product,
         ]);
     }
@@ -88,7 +88,7 @@ class ProductController extends Controller
     ]);
     }
 
-    public function update($product)
+    public function update(Product $product)
     {
         $rules = [
             'title' => ['required','max:255'],
@@ -100,8 +100,6 @@ class ProductController extends Controller
     
             request()->validate($rules);
 
-        $product = Product::findOrFail($product);
-
         $product->update(request()->all());
 
         return redirect()
@@ -110,11 +108,9 @@ class ProductController extends Controller
 
     }
 
-    public function destroy($product)
+    public function destroy(Product $product)
     {
-    
-        $product = Product::findOrFail($product);
-        
+            
         $product->delete();
 
         return redirect()
