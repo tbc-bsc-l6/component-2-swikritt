@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Image;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class ImageFactory extends Factory
@@ -13,8 +14,19 @@ class ImageFactory extends Factory
      */
     public function definition()
     {
+        $fileName = $this->faker->numberBetween(1, 10) . '.jpg';
+
         return [
-            //
+            'path' => "img/products/{$fileName}",
         ];
+    }
+
+    public function user()
+    {
+        $fileName = $this->faker->numberBetween(1, 6) . '.jpg';
+
+        return $this->state([
+            'path' => "img/users/{$fileName}",
+        ]);
     }
 }

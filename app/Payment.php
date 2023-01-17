@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Payment extends Model
 {
+    use HasFactory;
       /**
      * The attributes that are mass assignable.
      *
@@ -26,4 +27,5 @@ class Payment extends Model
     protected $dates = [
         'payed_at',
     ];
+
 }
