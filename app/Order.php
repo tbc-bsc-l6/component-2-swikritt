@@ -5,16 +5,18 @@ namespace App;
 use App\Payment;
 use App\Product;
 use App\User;
+use App\Scopes\AvailableScope;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Order extends Model
 {
     use HasFactory;
-     /**
+
+    /**
      * The attributes that are mass assignable.
      *
-     * @var array<int, string>
+     * @var array
      */
     protected $fillable = [
         'status',
@@ -33,7 +35,15 @@ class Order extends Model
 
     public function products()
     {
-        return $this->morphToMany(Product::class,'productable')->withPivot('quantity');
+        return $this->morphToMany(Product::class, 'productable')->withPivot('quantity');
+    }
+
+    public function getTotalAttribute()
+    {
+        return $this->products()
+            ->withoutGlobalScope(AvailableScope::class)
+            ->get()
+            ->pluck('total')
+            ->sum();
     }
 }
- 
