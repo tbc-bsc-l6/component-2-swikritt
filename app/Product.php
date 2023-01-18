@@ -32,8 +32,7 @@ class Product extends Model
     public function orders()
     {
         return $this->morphedByMany(Order::class,'productable')->withPivot('quantity');
-    }
-
+    } 
     public function images()
     {
         return $this->morphMany(Image::class, 'imageable');
