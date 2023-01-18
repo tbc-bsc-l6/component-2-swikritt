@@ -18,6 +18,7 @@ Route::get('/', 'MainController@index')->name('main');
 
 Route::resource('products','ProductController');
 
+Route::resource('products.carts','ProductCartController')->only(['store','destroy']);
 
 Auth::routes();
 
