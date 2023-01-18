@@ -4,12 +4,19 @@ namespace App\Http\Controllers;
 
 use App\Cart;
 use App\Product;
+use App\Services\CartService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cookie;
 
 class ProductCartController extends Controller
 {
    
+    public $cartService;
+
+    public function __construct(CartService $cartService)
+    {
+        $this->cartService = $cartService;
+    }
     
     /**
      * Store a newly created resource in storage.
@@ -20,8 +27,8 @@ class ProductCartController extends Controller
      */
     public function store(Request $request, Product $product)
     {
-        $cart = $this->getFromCookieOrCreate();
-
+        $cart = $this->cartService->getFromCookieOrCreate();
+ 
         $quantity = $cart->products()
             ->find($product->id)
             ->pivot
@@ -29,12 +36,11 @@ class ProductCartController extends Controller
 
         //attach,sync,syncwithoutdetaching
 
-
         $cart  ->products()->syncWithoutDetaching([
             $product->id => ['quantity' => $quantity + 1],
         ]);
 
-        $cookie = Cookie::make('cart', $cart->id,7 * 24 * 60 );
+        $cookie = $this->cartService->makeCookie($cart);
 
         return redirect()->back()->cookie($cookie);
     }
@@ -42,15 +48,12 @@ class ProductCartController extends Controller
    
     public function destroy(Product $product, Cart $cart)
     {
-        //
+       $cart->products()->detach($product->id);
+
+       $cookie = $this->cartService->makeCookie($cart);
+
+       return redirect()->back()->cookie($cookie);
     }
 
-    public function getFromCookieOrCreate()
-    {
-        $cartId = Cookie::get('cart');
-
-        $cart = Cart::find($cartId);
-
-        return $cart ?? Cart::create();
-    }
+    
 }
