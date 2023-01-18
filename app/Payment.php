@@ -2,21 +2,25 @@
 
 namespace App;
 
+
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Order;
 use Illuminate\Database\Eloquent\Model;
 
 class Payment extends Model
 {
     use HasFactory;
-      /**
+
+    /**
      * The attributes that are mass assignable.
      *
-     * @var array<int, string>
+     * @var array
      */
     protected $fillable = [
         'amount',
-        'payed_at', 
-    ];   
+        'payed_at',
+        'order_id',
+    ];  
 
     
     /**
@@ -28,4 +32,8 @@ class Payment extends Model
         'payed_at',
     ];
 
+    public function order()
+    {
+        return $this->belongsTo(Order::class);
+    }
 }
