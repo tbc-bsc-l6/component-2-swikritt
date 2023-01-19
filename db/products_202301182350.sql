@@ -1,0 +1,55 @@
+INSERT INTO products (title,description,price,stock,status,created_at,updated_at) VALUES
+	 ('Et odit assumenda.','Consequatur optio esse quidem neque quo aspernatur qui. Est laborum facere est reiciendis.',63.53,1,'available','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Et sit et incidunt.','Accusantium omnis in consequatur magni illo amet.',60.73,4,'unavailable','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Velit necessitatibus in.','Non dolorem quisquam est tempora aspernatur et voluptatem.',19.25,10,'unavailable','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Atque repudiandae ipsam dicta.','Aut aut dolores ad quod maxime aut. Omnis voluptatem voluptates nemo corporis et id odit.',38.6,5,'unavailable','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Aut culpa quia fugit sint.','Veniam quod quia officiis explicabo exercitationem.',75.13,10,'unavailable','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Nesciunt dolores facilis.','Rem sit magnam nulla delectus.',71.32,3,'available','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Animi et nisi sed.','Quia delectus odit optio recusandae magnam consequatur soluta.',77.71,8,'available','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Deleniti illum.','Sed dolorem et expedita praesentium qui fuga.',14.0,8,'available','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Quos voluptatem repellat.','Animi voluptas et est suscipit nemo.',71.08,7,'unavailable','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Nulla culpa sapiente voluptas.','Dolorem sapiente qui necessitatibus pariatur. Qui debitis ut et accusamus maxime voluptatem praesentium.',34.04,5,'available','2023-01-18 09:58:19','2023-01-18 09:58:19');
+INSERT INTO products (title,description,price,stock,status,created_at,updated_at) VALUES
+	 ('Reprehenderit sit.','Quia deserunt repudiandae molestiae provident.',22.13,10,'unavailable','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Consequatur earum corporis et.','Omnis et exercitationem libero quia qui enim est sed.',86.37,5,'unavailable','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Velit rerum vitae.','Accusamus quidem saepe vero temporibus at nesciunt.',93.21,6,'available','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Quos nobis cum.','Sint iusto et qui cum rem repellat delectus sed. Error minus repudiandae animi delectus omnis nobis nemo.',25.34,8,'unavailable','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Et incidunt sint deserunt.','Accusantium labore voluptas voluptates temporibus et et excepturi.',27.66,3,'unavailable','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Atque at sint beatae est.','Occaecati est dolorem aut.',15.28,3,'unavailable','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Consequuntur quia sint.','Placeat maxime natus harum explicabo deleniti dolores commodi.',39.97,9,'unavailable','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Enim sunt fugit error.','Laudantium nulla alias exercitationem eveniet et labore doloremque.',95.42,3,'available','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Optio praesentium harum.','Consectetur ut velit eum laudantium vel. In itaque quo vero mollitia repellat et reiciendis.',9.94,2,'available','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Sint voluptatum laudantium.','Labore qui quia consequatur veritatis velit dolor magni sequi. In voluptatem nulla qui aut voluptatem sunt soluta adipisci.',48.91,5,'available','2023-01-18 09:58:19','2023-01-18 09:58:19');
+INSERT INTO products (title,description,price,stock,status,created_at,updated_at) VALUES
+	 ('Dolor eaque sint eos.','Minima fugiat assumenda nesciunt velit corporis numquam. Debitis reiciendis atque ducimus repellendus consequatur nesciunt odit.',65.58,2,'available','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Et nihil repellat blanditiis.','Aut ad quod facere.',20.0,6,'unavailable','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Ex aperiam quaerat aliquid.','Libero voluptate sed hic fugit quis ad consequatur. Quia qui odio ut est est ipsam rerum.',46.76,3,'unavailable','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Quas est pariatur velit.','Libero illo et sed corporis. Vero et fugit cum molestiae cupiditate dolorem.',13.41,8,'unavailable','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Qui quae et veritatis autem.','Omnis facere est impedit et dolore dolore. Magni sapiente eos itaque explicabo optio.',23.72,9,'unavailable','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Aliquam et esse consequatur.','Cum repudiandae sed rem repudiandae.',88.61,3,'unavailable','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Voluptatem molestiae modi consectetur.','Optio ad magni sunt autem.',91.87,6,'available','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Explicabo vero ipsam ea.','Voluptas ipsam consequatur ex nobis.',44.26,9,'available','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Sit neque qui corrupti.','Est voluptate et possimus est molestiae.',74.58,7,'unavailable','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Deleniti est ab temporibus.','Officia aut voluptatem voluptatem possimus repellendus sint.',20.88,7,'available','2023-01-18 09:58:19','2023-01-18 09:58:19');
+INSERT INTO products (title,description,price,stock,status,created_at,updated_at) VALUES
+	 ('Nisi id eveniet.','Quo repellendus autem eaque ipsam veniam vitae reprehenderit. Nisi enim magni aut pariatur laudantium officia esse.',17.04,1,'unavailable','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Earum veniam quam.','Sequi aut rerum esse.',55.77,10,'available','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Impedit ipsam sunt.','Ipsam aut enim deleniti et dignissimos. Consectetur et et veritatis voluptas voluptatem.',35.75,6,'unavailable','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Tenetur et similique.','Recusandae praesentium nisi corrupti quae.',72.02,1,'available','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Voluptas sit unde exercitationem.','Nihil cumque est quasi ea voluptatem expedita. Tenetur eum asperiores temporibus nisi.',10.73,6,'available','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Et sed voluptatem odio voluptate.','Quia non laboriosam accusamus et. Nam enim velit sit consequatur.',90.0,4,'unavailable','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Architecto sit voluptates quas.','Eius qui explicabo quidem et dolores. Facere enim quis ut debitis qui blanditiis.',27.84,3,'unavailable','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Eos et asperiores.','Autem doloremque sapiente asperiores quas alias quidem. Eius nostrum eum in ea quia similique quo.',83.44,8,'available','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Pariatur rerum aut.','Sapiente sequi quibusdam omnis similique sequi odio.',4.14,2,'unavailable','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Voluptas fuga ea.','Repellendus magnam magnam perferendis numquam quam beatae rerum.',25.09,7,'unavailable','2023-01-18 09:58:19','2023-01-18 09:58:19');
+INSERT INTO products (title,description,price,stock,status,created_at,updated_at) VALUES
+	 ('Eaque unde.','Expedita reiciendis consectetur ut dolorum minima dignissimos qui voluptate.',29.72,1,'available','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Quod nemo voluptatem voluptatem.','Adipisci et quibusdam ipsum quis.',42.0,6,'available','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Porro enim reprehenderit.','Vitae similique qui praesentium qui.',46.15,10,'unavailable','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Dolore consectetur a ipsum.','Reiciendis libero mollitia est libero.',33.07,4,'unavailable','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Sit ex minima accusamus.','Architecto aliquid omnis beatae et temporibus et omnis. Qui aliquam odio voluptatum doloribus aut quidem.',91.42,3,'unavailable','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Id tempore voluptas quibusdam.','Expedita non tenetur deleniti.',90.06,5,'available','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Temporibus possimus illum.','Voluptatibus totam omnis distinctio labore. Sed velit nisi mollitia soluta iste unde ea.',47.53,4,'unavailable','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Eius impedit quis soluta reiciendis.','Eaque quis corporis provident laboriosam et id fugiat.',63.52,1,'available','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Placeat voluptatem dolorem sunt.','Veritatis praesentium aut minima. Cumque assumenda consequatur voluptatem et.',9.48,1,'unavailable','2023-01-18 09:58:19','2023-01-18 09:58:19'),
+	 ('Tenetur dolores qui recusandae maxime.','Autem ut facere ut culpa modi et nulla.',81.86,10,'available','2023-01-18 09:58:19','2023-01-18 09:58:19');
