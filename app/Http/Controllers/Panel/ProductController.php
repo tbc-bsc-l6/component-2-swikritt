@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers\Panel;
 
+
+use App\PanelProduct;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\ProductRequest;
 use App\Product;
@@ -66,15 +68,12 @@ class ProductController extends Controller
 
     }
 
-    public function destroy(Product $product)
+   public function destroy(PanelProduct $product)
     {
-            
         $product->delete();
 
         return redirect()
-        ->route('products.index')
-        ->withSuccess("The product with id {$product->id } was removed ");
-
-
+            ->route('products.index')
+            ->withSuccess("The product with id {$product->id} was removed");
     }
 }
